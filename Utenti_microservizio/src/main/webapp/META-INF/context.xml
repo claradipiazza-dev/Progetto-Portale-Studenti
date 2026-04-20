@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context path="/Utenti_microservizio">
+	<Resource auth="Container"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		maxActive="100"
+		minIdle="10"
+        maxIdle="20"
+		maxWait="10000"
+		name="jdbc/utenti"
+		username="root"
+		password="Database1196"
+		type="javax.sql.DataSource"
+		url="jdbc:mysql://localhost:3306/utenti?useLegacyDatetimeCode=false&amp;serverTimezone=Europe/Rome"
+		testOnBorrow="true"
+		validationQuery="SELECT 1" />		
+</Context>

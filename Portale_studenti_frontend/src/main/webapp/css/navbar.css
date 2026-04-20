@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+#loginButton {
+        background: none;
+        border: none;
+        padding: 0.5rem 0.8rem;
+        color: white;
+        transition: color 0.2s ease-in-out;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    #nav1 {
+        padding: 0.5rem;
+        background-color: #0b408d;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+        position: relative;
+    }
+    
+.nav-link {
+    color: white !important;
+    border-radius: 6px;
+    padding: 0.5rem 0.9rem;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    margin-right: 30px;
+    
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+    
+    #logout {
+		color: white !important;
+    	border-radius: 6px;
+    	padding: 0.5rem 0.9rem;
+    	transition: background-color 0.2s ease;
+    	cursor: pointer;
+    	
+    }
+   
+   #logout:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+    
+    /* Stili minimali per il modal di accesso */
+    #myModalAccesso .modal-content {
+        border-radius: 15px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    #myModalAccesso .modal-header {
+        background: linear-gradient(135deg, #0b408d 0%, #1a5bbf 100%);
+        color: white;
+        padding: 1.5rem 2rem;
+        border-bottom: none;
+    }
+    
+    #myModalAccesso .modal-header .modal-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    #myModalAccesso .modal-header .btn-close {
+        filter: invert(1) brightness(100%);
+        opacity: 0.8;
+    }
+    
+    #myModalAccesso .modal-body {
+        padding: 2rem;
+        background-color: #f8fafc;
+    }
+    
+    #myModalAccesso .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    #myModalAccesso .form-group label {
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    
+    #myModalAccesso .form-control {
+        padding: 0.75rem 1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background-color: white;
+    }
+    
+    #myModalAccesso .form-control:focus {
+        border-color: #0b408d;
+        box-shadow: 0 0 0 3px rgba(11, 64, 141, 0.1);
+        outline: none;
+    }
+    
+    #myModalAccesso .input-group .form-control {
+        padding-right: 3rem;
+    }
+    
+    #myModalAccesso .input-group-append {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+    
+    #myModalAccesso .input-group-append .btn {
+        background: none;
+        border: none;
+        color: #718096;
+        cursor: pointer;
+        padding: 0.25rem;
+    }
+    
+    #myModalAccesso .show-password-container {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 1.5rem 0;
+    }
+    
+    #myModalAccesso .show-password-container input[type="checkbox"] {
+        margin-right: 0.5rem;
+        width: 18px;
+        height: 18px;
+        accent-color: #0b408d;
+    }
+    
+    #myModalAccesso .show-password-container label {
+        margin: 0;
+        font-weight: normal;
+        color: #4a5568;
+        cursor: pointer;
+    }
+    
+    #myModalAccesso #login {
+        width: 100%;
+        padding: 0.875rem;
+        background: linear-gradient(135deg, #0b408d 0%, #1a5bbf 100%);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        margin-top: 0.5rem;
+    }
+    
+    #myModalAccesso #login:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(11, 64, 141, 0.3);
+    }
+    
+    #myModalAccesso .modal-footer {
+        padding: 1.5rem 2rem;
+        background-color: #f1f5f9;
+        border-top: 1px solid #e2e8f0;
+    }
+    
+    #myModalAccesso .modal-footer .btn-danger {
+        background-color: #e53e3e;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+    }
+    
+    #myModalAccesso .form-check-input:checked {
+        background-color: #0b408d;
+        border-color: #0b408d;
+    }
+    
+    
+    @media (max-width: 768px) {
+        #myModalAccesso .modal-dialog {
+            margin: 1rem;
+        }
+        
+        #myModalAccesso .modal-body {
+            padding: 1.5rem;
+        }
+    }
+    
+/* Dropdown annidati verticali */
+/* Dropdown principale */
+.navbar .dropdown-menu {
+    background-color: #f8f9fa; /* chiaro e pulito */
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 0.3rem 0;
+    min-width: 200px;
+
+    /* Animazione morbida */
+    transform-origin: top center;
+    animation: slideDown 0.25s ease forwards;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Quando il menu viene mostrato */
+.dropdown-menu.show {
+    opacity: 1;
+}
+
+/* Voci del dropdown */
+.navbar .dropdown-menu .dropdown-item {
+    color: #0b408d;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Hover delle voci */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #0b408d;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sotto-menu annidati */
+.dropdown-submenu > .dropdown-menu {
+    background-color: #e9ecef;
+    border-radius: 6px;
+    margin-left: 10px;
+    border: 1px solid #dee2e6;
+    padding: 0.2rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Voci sotto-menu annidati */
+.dropdown-submenu .dropdown-item {
+    font-weight: 400;
+    color: #0b3a8a;
+    padding-left: 1.2rem;
+}
+
+/* Hover sotto-menu */
+.dropdown-submenu .dropdown-item:hover {
+    background-color: #0b408d;
+    color: white;
+}
+
+/* Keyframes per l’animazione */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Immagine di sfondo sotto navbar */
+    .immagine {
+        padding: 2rem;
+        text-align: center;
+    }
