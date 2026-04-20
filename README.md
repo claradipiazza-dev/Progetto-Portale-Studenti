@@ -37,3 +37,4 @@ Per valutare l'efficacia delle due architetture è stato utilizzato **Apache JMe
 * **Payload:** Analisi della dimensione dei dati scambiati (particolarmente rilevante nel formato JSON dei microservizi).
 
 Questo approccio analitico ha permesso di confrontare oggettivamente l'overhead di rete introdotto dalla comunicazione inter-servizio rispetto alla chiamata locale del monolite.
+
